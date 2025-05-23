@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Журнал операций</title>
+  <link rel="stylesheet" href="operations_log.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Журнал операций</h1>
+      <div class="filter">По дате <span class="icon">🔽</span></div>
+    </div>
+
+    <div class="operation expanded">
+      <div class="operation-top">
+        <button class="toggle">🔽</button>
+        <div class="details">
+          <div class="category">Категория</div>
+          <div class="name">Товар категории <span class="amount">500 шт</span></div>
+        </div>
+        <div class="meta">
+          <div class="timestamp">2025.05.20 9:41 AM</div>
+          <div class="status orange">● Новая отгрузка</div>
+        </div>
+      </div>
+      <div class="extra">
+        <p>Детальная информация по отгрузке...</p>
+        <a href="#" class="report-link">Экспорт отчета ➔</a>
+      </div>
+    </div>
+
+    <!-- Повторяющиеся карточки -->
+    <div class="operation">
+      <div class="operation-top">
+        <button class="toggle">🔽</button>
+        <div class="details">
+          <div class="category">Категория</div>
+          <div class="name">Товар категории <span class="amount">500 шт</span></div>
+        </div>
+        <div class="meta">
+          <div class="timestamp">2025.05.20 9:41 AM</div>
+          <div class="status green">● Отгружено</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="operation">
+      <div class="operation-top">
+        <button class="toggle">🔽</button>
+        <div class="details">
+          <div class="category">Категория</div>
+          <div class="name">Товар категории <span class="amount">500 шт</span></div>
+        </div>
+        <div class="meta">
+          <div class="timestamp">2025.05.20 9:41 AM</div>
+          <div class="status blue">● Поступило на склад</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagination">
+      ● ○ ○ ○ ○
+    </div>
+    <div class="alert">Есть нулевые остатки</div>
+  </div>
+</body>
+</html>

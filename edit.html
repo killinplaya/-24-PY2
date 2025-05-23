@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Добавление/редактирование</title>
+  <link rel="stylesheet" href="edit.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Добавление/редактирование</h1>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Артикул, баркод, наименование, категория">
+      <select>
+        <option>Фильтр</option>
+      </select>
+    </div>
+
+    <div class="product-list">
+      <!-- Один товар -->
+      <div class="product-card">
+        <div class="image-placeholder"></div>
+        <div class="product-info">
+          <div class="product-title">Наименование товара...............................</div>
+          <div class="product-details">
+            Категория; Бренд<br>
+            Артикул: 98798798798789<br>
+            Баркод: 98798798798789
+          </div>
+          <button class="edit-btn">Редактировать ➝</button>
+        </div>
+      </div>
+
+      <!-- Копии карточек -->
+      <div class="product-card">
+        <div class="image-placeholder"></div>
+        <div class="product-info">
+          <div class="product-title">Наименование товара...............................</div>
+          <div class="product-details">
+            Категория; Бренд<br>
+            Артикул: 98798798798789<br>
+            Баркод: 98798798798789
+          </div>
+          <button class="edit-btn">Редактировать ➝</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="image-placeholder"></div>
+        <div class="product-info">
+          <div class="product-title">Наименование товара...............................</div>
+          <div class="product-details">
+            Категория; Бренд<br>
+            Артикул: 98798798798789<br>
+            Баркод: 98798798798789
+          </div>
+          <button class="edit-btn">Редактировать ➝</button>
+        </div>
+      </div>
+    </div>
+
+    <button class="add-btn">Добавить новый товар</button>
+
+     <div class="pagination">
+      ● ○ ○ ○ ○
+    </div>
+    <div class="alert">Есть нулевые остатки</div>
+  </div>
+</body>
+</html>
