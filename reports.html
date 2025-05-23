@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Страница отчетов</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="container">
+    <h1>Страница отчетов</h1>
+    <h2 class="subtitle">Выгрузки</h2>
+
+    <div class="report-block">
+      <div class="report-item">
+        <div>
+          <strong>Текущие остатки</strong><br/>
+          Отчет от 2025.05.20 • 9:41 AM
+        </div>
+        <a href="#">Скачать отчет →</a>
+      </div>
+
+      <div class="report-item">
+        <div>
+          <strong>Товары с критическим остатком</strong><br/>
+          Отчет от 2025.05.20 • 9:41 AM
+        </div>
+        <a href="#">Скачать отчет →</a>
+      </div>
+
+      <div class="report-item">
+        <div>
+          <strong>Движения товара за период 2024 – 2025</strong><br/>
+          Отчет от 2025.05.20 • 9:41 AM
+        </div>
+        <a href="#">Скачать отчет →</a>
+      </div>
+
+      <div class="report-item">
+        <div>
+          <strong>Свод операций за период 2024 – 2025</strong><br/>
+          Отчет от 2025.05.20 • 9:41 AM
+        </div>
+        <a href="#">Скачать отчет →</a>
+      </div>
+    </div>
+
+    <div class="formats">
+      <button>XLSX →</button>
+      <button>PDF →</button>
+      <button>CSV →</button>
+    </div>
+
+    <!-- Форма создания отчета -->
+    <form action="/create-report" method="POST" class="create-form">
+      <div class="date-picker">
+        <input type="date" name="start_date" required />
+        <input type="date" name="end_date" required />
+      </div>
+      <button type="submit" class="create-report">Создать отчет</button>
+    </form>
+
+  
+     <div class="pagination">
+      ● ○ ○ ○ ○
+    </div>
+    <div class="alert">Есть нулевые остатки</div>
+  </div>
+</body>
+</html>

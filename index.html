@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Статистика</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Статистика</h1>
+
+    <div class="dropdown">
+      <select>
+        <option>Выбрать категорию товара</option>
+      </select>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span>Категория товара <span class="badge">1256</span></span>
+        <span class="filter">Наименьший остаток &#x1F5D2;</span>
+      </div>
+      <table>
+        <tr><td>Товар</td><td>Склад</td><td><span class="badge red">0</span></td></tr>
+        <tr><td>Товар</td><td>Склад</td><td><span class="badge orange">20</span></td></tr>
+        <tr><td>Товар</td><td>Склад</td><td><span class="badge orange">20</span></td></tr>
+        <tr><td>Товар</td><td>Склад</td><td><span class="badge green">100</span></td></tr>
+        <tr><td>Товар</td><td>Склад</td><td><span class="badge green">150</span></td></tr>
+        <tr><td>Товар</td><td>Склад</td><td><span class="badge green">200</span></td></tr>
+      </table>
+      <div class="footer-text">Первые 6 остатков</div>
+    </div>
+
+    <div class="buttons">
+      <button>Список товаров →</button>
+      <button>Добавить товар →</button>
+      <button>Отчёты →</button>
+    </div>
+
+    <h2>Поступления/отгрузки</h2>
+    <button class="add-ship-btn">Добавить поступление/отгрузку →</button>
+
+    <div class="log-entry">
+      <div class="icon"></div>
+      <div class="info">
+        <div>Категория</div>
+        <div class="sub">Товар категории</div>
+      </div>
+      <div class="status orange-dot">Новая отгрузка</div>
+      <div class="time">9:41 AM</div>
+    </div>
+
+    <div class="log-entry">
+      <div class="icon"></div>
+      <div class="info">
+        <div>Категория</div>
+        <div class="sub">Товар категории</div>
+      </div>
+      <div class="status blue-dot">Поступило на склад</div>
+      <div class="time">9:41 AM</div>
+    </div>
+
+    <div class="log-entry">
+      <div class="icon"></div>
+      <div class="info">
+        <div>Категория</div>
+        <div class="sub">Товар категории</div>
+      </div>
+      <div class="status green-dot">Отгружено</div>
+      <div class="time">9:41 AM</div>
+    </div>
+    <div class="pagination">
+      ● ○ ○ ○ ○
+    </div>
+    <div class="alert">Есть нулевые остатки</div>
+  </div>
+</body>
+</html>
